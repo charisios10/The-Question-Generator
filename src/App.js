@@ -7,7 +7,7 @@ function App() {
 
   const fetchQuestion = async () => {
     try {
-      const response = await fetch("https://question.charisios.com/question");
+      const response = await fetch("https://api.question.charisios.com/question");
       if (!response.ok) {
         throw new Error("Failed to fetch question");
       }
