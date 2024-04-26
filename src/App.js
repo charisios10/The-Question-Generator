@@ -27,6 +27,7 @@ function App() {
     <div className="App">
       {memeUrl && <img className="meme" src={memeUrl} alt="Meme" />}
       <h1>Random Question Generator</h1>
+      <p>Made by Charisios C.</p>
       <button className="btn" onClick={fetchQuestion}>
         Get Question
       </button>
