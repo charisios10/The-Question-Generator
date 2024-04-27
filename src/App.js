@@ -7,7 +7,9 @@ function App() {
 
   const fetchQuestion = async () => {
     try {
-      const response = await fetch("https://api.question.charisios.com/question");
+      const response = await fetch(
+        "https://api.question.charisios.com/question"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch question");
       }
@@ -33,6 +35,10 @@ function App() {
       </button>
       {error && <p className="text-error">{error}</p>}
       {question && <p className="response">{question}</p>}
+      <p>
+        Want to support the project? Donate here:
+        https://buy.copperx.io/payment/payment-link/79a08ed3-4328-4a17-a3e1-ace1aa274ecf
+      </p>
     </div>
   );
 }
