@@ -36,8 +36,8 @@ function App() {
       {error && <p className="text-error">{error}</p>}
       {question && <p className="response">{question}</p>}
       <p>
-        Want to support the project? Donate here:
-        https://buy.copperx.io/payment/payment-link/79a08ed3-4328-4a17-a3e1-ace1aa274ecf
+        Want to support the project? Donate{" "}
+        <a href="https://plisio.net/donate/qFOx0Jzc">here</a>.
       </p>
     </div>
   );
